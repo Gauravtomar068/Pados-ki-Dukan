@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Pados_Ki_Dukan</title>
+  <link rel="icon" type="image" href="favicon.ico">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+
+  <link rel="stylesheet" href="css/aos.css">
+
+  <link rel="stylesheet" href="css/ionicons.min.css">
+
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+
+    
+    #slider-text {
+      padding-top: 40px;
+      display: block;
+    }
+
+    #slider-text .col-md-6 {
+      overflow: hidden;
+    }
+
+    #slider-text h2 {
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: 400;
+      font-size: 30px;
+      letter-spacing: 3px;
+      margin: 30px auto;
+      padding-left: 40px;
+    }
+
+    #slider-text h2::after {
+      border-top: 2px solid #c7c7c7;
+      content: "";
+      position: absolute;
+      bottom: 35px;
+      width: 100%;
+    }
+
+    #itemslider h4 {
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: 400;
+      font-size: 12px;
+      margin: 10px auto 3px;
+    }
+
+    #itemslider h5 {
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: bold;
+      font-size: 12px;
+      margin: 3px auto 2px;
+    }
+
+    #itemslider h6 {
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: 300;
+      ;
+      font-size: 10px;
+      margin: 2px auto 5px;
+    }
+
+    .badge {
+      background: #b20c0c;
+      position: absolute;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      line-height: 31px;
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      border: 2px solid #FFF;
+      box-shadow: 0 0 0 1px #b20c0c;
+      top: 5px;
+      right: 25%;
+    }
+
+    #slider-control img {
+      padding-top: 60%;
+      margin: 0 auto;
+    }
+
+    @media screen and (max-width: 992px) {
+      #slider-control img {
+        padding-top: 70px;
+        margin: 0 auto;
+      }
+    }
+
+    .carousel-showmanymoveone .carousel-control {
+      width: 4%;
+      background-image: none;
+    }
+
+    .carousel-showmanymoveone .carousel-control.left {
+      margin-left: 5px;
+    }
+
+    .carousel-showmanymoveone .carousel-control.right {
+      margin-right: 5px;
+    }
+
+    .carousel-showmanymoveone .cloneditem-1,
+    .carousel-showmanymoveone .cloneditem-2,
+    .carousel-showmanymoveone .cloneditem-3,
+    .carousel-showmanymoveone .cloneditem-4,
+    .carousel-showmanymoveone .cloneditem-5 {
+      display: none;
+    }
+
+    @media all and (min-width: 768px) {
+
+      .carousel-showmanymoveone .carousel-inner>.active.left,
+      .carousel-showmanymoveone .carousel-inner>.prev {
+        left: -50%;
+      }
+
+      .carousel-showmanymoveone .carousel-inner>.active.right,
+      .carousel-showmanymoveone .carousel-inner>.next {
+        left: 50%;
+      }
+
+      .carousel-showmanymoveone .carousel-inner>.left,
+      .carousel-showmanymoveone .carousel-inner>.prev.right,
+      .carousel-showmanymoveone .carousel-inner>.active {
+        left: 0;
+      }
+
+      .carousel-showmanymoveone .carousel-inner .cloneditem-1 {
+        display: block;
+      }
+    }
+
+    @media all and (min-width: 768px) and (transform-3d),
+    all and (min-width: 768px) and (-webkit-transform-3d) {
+
+      .carousel-showmanymoveone .carousel-inner>.item.active.right,
+      .carousel-showmanymoveone .carousel-inner>.item.next {
+        -webkit-transform: translate3d(50%, 0, 0);
+        transform: translate3d(50%, 0, 0);
+        left: 0;
+      }
+
+      .carousel-showmanymoveone .carousel-inner>.item.active.left,
+      .carousel-showmanymoveone .carousel-inner>.item.prev {
+        -webkit-transform: translate3d(-50%, 0, 0);
+        transform: translate3d(-50%, 0, 0);
+        left: 0;
+      }
+
+      .carousel-showmanymoveone .carousel-inner>.item.left,
+      .carousel-showmanymoveone .carousel-inner>.item.prev.right,
+      .carousel-showmanymoveone .carousel-inner>.item.active {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        left: 0;
+      }
+    }
+
+    @media all and (min-width: 992px) {
+
+      .carousel-showmanymoveone .carousel-inner>.active.left,
+      .carousel-showmanymoveone .carousel-inner>.prev {
+        left: -16.666%;
+      }
+
+      .carousel-showmanymoveone .carousel-inner>.active.right,
+      .carousel-showmanymoveone .carousel-inner>.next {
+        left: 16.666%;
+      }
+
+      .carousel-showmanymoveone .carousel-inner>.left,
+      .carousel-showmanymoveone .carousel-inner>.prev.right,
+      .carousel-showmanymoveone .carousel-inner>.active {
+        left: 0;
+      }
+
+      .carousel-showmanymoveone .carousel-inner .cloneditem-2,
+      .carousel-showmanymoveone .carousel-inner .cloneditem-3,
+      .carousel-showmanymoveone .carousel-inner .cloneditem-4,
+      .carousel-showmanymoveone .carousel-inner .cloneditem-5,
+      .carousel-showmanymoveone .carousel-inner .cloneditem-6 {
+        display: block;
+      }
+    }
+
+    @media all and (min-width: 992px) and (transform-3d),
+    all and (min-width: 992px) and (-webkit-transform-3d) {
+
+      .carousel-showmanymoveone .carousel-inner>.item.active.right,
+      .carousel-showmanymoveone .carousel-inner>.item.next {
+        -webkit-transform: translate3d(16.666%, 0, 0);
+        transform: translate3d(16.666%, 0, 0);
+        left: 0;
+      }
+
+      .carousel-showmanymoveone .carousel-inner>.item.active.left,
+      .carousel-showmanymoveone .carousel-inner>.item.prev {
+        -webkit-transform: translate3d(-16.666%, 0, 0);
+        transform: translate3d(-16.666%, 0, 0);
+        left: 0;
+      }
+
+      .carousel-showmanymoveone .carousel-inner>.item.left,
+      .carousel-showmanymoveone .carousel-inner>.item.prev.right,
+      .carousel-showmanymoveone .carousel-inner>.item.active {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        left: 0;
+      }
+    }
+
+.title{
+	text-align: center;
+	margin: 0 auto 80px;
+	position: relative;
+	line-height: 60px;
+	color: #555;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.title::after{
+	content: '';
+	background: #038f1f;
+	width: 80px;
+	height: 5px;
+	border-radius: 5px;
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+
+ 
+	
+  </style>
+</head>
+<body class="goto-here"> 
+	<div class="py-1 bg-dark">
+		<div class="container">
+			<div class="row no-gutters d-flex align-items-start align-items-center px-md-0">
+				<div class="col-lg-12 d-block">
+					<div class="row d-flex">
+						<div class="col-md pr-4 d-flex topper align-items-center">
+							<div class="icon mr-2 d-flex justify-content-center align-items-center"><span
+									class="icon-phone2"></span></div>
+							<span class="text">+91 6390254497</span>
+						</div>
+						<div class="col-md pr-4 d-flex topper align-items-center">
+							<div class="icon mr-2 d-flex justify-content-center align-items-center"><span
+									class="icon-paper-plane"></span></div>
+							<span class="text">rksharmasharma525@gmail.com</span>
+						</div>
+						<div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right">
+							<span class="text">Fasted delivery &amp;Returns</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">Pados Ki Dukan</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+
+					</li>
+					<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+					<li class="nav-item"><a href="p_page.html" class="nav-link">Products page</a></li>
+					<li class="nav-item"><a href="shop.html" class="nav-link">Products by category</a></li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false">More</a>
+						<div class="dropdown-menu" aria-labelledby="dropdown04">
+
+							<a class="dropdown-item" href="profile.html">MY PROFILE</a>
+							<a class="dropdown-item" href="contact us.html">CONTACT US</a>
+
+
+							<a class="dropdown-item" href="order.html">MY ORDERS</a>
+              <a class="dropdown-item" href="FAQ.html">FAQs</a>
+							
+
+
+						</div>
+						
+					<li class="nav-item"><a href="acount.html" class="nav-link">Sign in/ Sign Up</a></li>
+					<li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link"><span
+								class="icon-shopping_cart"></span>[2]</a></li>
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+ 
+
+  <div class="hero-wrap hero-bread" style="background-image: url('images/Frts.jpg');">
+    <div class="container">
+      <div class="row no-gutters slider-text align-items-center justify-content-center">
+        <div class="col-md-9 ftco-animate text-center">
+          <p class="breadcrumbs"><span class="mr-2"><a href="index.html"><strong>Home>></strong></a></span><span><strong>Product Page</strong></span></p>
+          <h1 class="mb-0 bread">Products</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <section class="ftco-section ftco-category ftco-no-pt pt-4 mt-5">
+    <div class="container">
+      <a href="#pr"></a>
+      <div class="row">
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-6 order-md-last align-items-stretch d-flex">
+              <div class="category-wrap-2 ftco-animate img align-self-stretch d-flex"
+                style="background-image: url(images/category.jpg);">
+                <div class="text text-center">
+                  <h2><strong>Fresh & healthy Vegetables and Fruits</strong></h2>
+                  <p>Protect the health of every home</p>
+                  <p><a href="#" class="btn btn-primary">Shop now</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="category-wrap ftco-animate img mb-4 d-flex align-items-end"
+                style="background-image: url(images/Vegetables.jpg);">
+                <div class="text px-3 py-1">
+                  <h2 class="mb-0"><a href="#">Vegetables</a></h2>
+                </div>
+              </div>
+              <div class="category-wrap ftco-animate img d-flex align-items-end"
+                style="background-image: url(images/Fruits.jpg);">
+                <div class="text px-3 py-1">
+                  <h2 class="mb-0"><a href="#">Fruits</a></h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="category-wrap ftco-animate img mb-4 d-flex align-items-end"
+            style="background-image: url(images/drieds.jpg);">
+            <div class="text px-3 py-1">
+              <h2 class="mb-0"><a href="#">Dried</a></h2>
+            </div>
+          </div>
+          <div class="category-wrap ftco-animate img d-flex align-items-end"
+            style="background-image: url(images/juices.webp);">
+            <div class="text px-3 py-1">
+              <h2 class="mb-0"><a href="#">Juices</a></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <h2 class="mb-4 title"> <STRONG><Span>P</Span> <span>R</span> <span>O</span> <span>D</span> <span>U</span> <span>C</span> <span>T</span> <span>S</span></STRONG></h2>
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700&subset=latin-ext" rel="stylesheet">
+
+
+
+  
+
+ 
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="carousel carousel-showmanymoveone slide" id="itemslider">
+          <div class="carousel-inner">
+
+            <div class="item active">
+              <div class="col-xs-12 col-sm-6 col-md-2">
+                <a href="#"><img style="height: 265px;"
+                    src="https://images.pexels.com/photos/2611810/pexels-photo-2611810.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    class="img-responsive center-block"></a>
+                <h4 class="text-center">ORANGE</h4>
+                <h5 class="text-center">100 Rupees</h5>
+                <h6 class="text-center">per Kg.</h6>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="col-xs-12 col-sm-6 col-md-2">
+                <a href="#"><img style="height: 265px;"
+                    src="https://images.pexels.com/photos/8063448/pexels-photo-8063448.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    class="img-responsive center-block"></a>
+                    <span class="badge">10%</span>
+                <h4 class="text-center">DRY FRUITS</h4>
+                <h5 class="text-center">100 Rupees</h5>
+                <h6 class="text-center">per Kg.</h6>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="col-xs-12 col-sm-6 col-md-2">
+                <a href="#"><img style="height: 265px;"
+                    src="https://images.pexels.com/photos/918643/pexels-photo-918643.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    class="img-responsive center-block"></a>
+                <span class="badge">10%</span>
+                <h4 class="text-center">MANGOS</h4>
+                <h5 class="text-center">100 Rupees</h5>
+                <h6 class="text-center">per Kg.</h6>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="col-xs-12 col-sm-6 col-md-2">
+                <a href="#"><img style="height: 265px;"
+                    src="https://images.pexels.com/photos/1149300/pexels-photo-1149300.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    class="img-responsive center-block"></a>
+                    <span class="badge">5%</span>
+                <h4 class="text-center">KIWI</h4>
+                <h5 class="text-center">100 Rupees</h5>
+                <h6 class="text-center">per Kg.</h6>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="col-xs-12 col-sm-6 col-md-2">
+                <a href="#"><img style="height: 265px;"
+                    src="https://images.pexels.com/photos/2224358/pexels-photo-2224358.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    class="img-responsive center-block"></a>
+                <h4 class="text-center">STRAWBERRY</h4>
+                <h5 class="text-center">100 Rupees</h5>
+                <h6 class="text-center">per Kg.</h6>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="col-xs-12 col-sm-6 col-md-2">
+                <a href="#"><img style="height: 265px;"
+                    src="https://images.pexels.com/photos/434295/pexels-photo-434295.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    class="img-responsive center-block"></a>
+                <h4 class="text-center">MULBERRY</h4>
+                <h5 class="text-center">100 Rupees</h5>
+                <h6 class="text-center">per Kg.</h6>
+              </div>
+            </div>
+
+          </div>
+
+          <div id="slider-control">
+            <a class="left carousel-control" href="#itemslider" data-slide="prev"><img
+                src="https://cdn0.iconfinder.com/data/icons/website-kit-2/512/icon_402-512.png" alt="Left"
+                class="img-responsive"></a>
+            <a class="right carousel-control" href="#itemslider" data-slide="next"><img
+                src="http://pixsector.com/cache/81183b13/avcc910c4ee5888b858fe.png" alt="Right"
+                class="img-responsive"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <hr>
+
+
+  <section class="ftco-section ftco-no-pt ftco-no-pb py-5 bg-light mt-5">
+		<div class="container py-4">
+			<div class="row d-flex justify-content-center py-5">
+				<div class="col-md-6">
+					<h2 style="font-size: 22px;" class="mb-0"><b>Subcribe to our Newsletter</b></h2>
+					<span>Enter e-mail. updates about our latest shops and special offers</span>
+				</div>
+				<div class="col-md-6 d-flex align-items-center">
+					<form action="#" class="subscribe-form">
+						<div class="form-group d-flex">
+							<input type="text" class="form-control" placeholder="Enter  Your email address">
+							<input type="submit" value="Subscribe" class="submit px-3">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+  <footer class="ftco-footer ftco-section">
+    <div class="container">
+      <div class="row">
+        <div class="mouse">
+          <a href="#" class="mouse-icon">
+            <div class="mouse-wheel"><span class="ion-ios-arrow-up"></span></div>
+          </a>
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+            <!-- <button type="button" class="btn btn-default"> -->
+              <h3><strong> Pados Ki Dukan</strong></h3>
+            </button>
+            
+            <br><br> 
+            <p>Pados ki Dukan one of the best leading business in the vegetables vendors.
+              Also know for vegetables Wholesales,
+              vegetable Vendors,fruits Wholesales,fruits importers vegetables Exporters,fruits  Distrebutors and much more..
+
+            </p>
+            <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+              <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="icon-linkedin"></span></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md">
+          
+          <div class="ftco-footer-widget mb-4">
+            <!-- <button type="button" class="btn btn-default"> -->
+              <h3><strong>Links</strong></h3>
+            </button>
+         
+            <br><br>
+            <ul class="list-unstyled">
+              <li><a href="index.html" class="fas fa-arrow-right">Home</a></li>
+              <li><a href="about.html" class="py-2 d-block">About</a></li>
+              <li><a href="order.html" class="py-2 d-block">Products</a></li>
+              <li><a href="profile.html" class="py-2 d-block">My Profile</a></li>
+              <li><a href="contact us.html" class="py-2 d-block">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <!-- <button type="button" class="btn btn-default"> -->
+            <h3><strong>Help</strong></h3>
+          </button>
+          <div class="ftco-footer-widget mb-4">
+            
+            <br>
+            <div class="d-flex">
+              <ul class="list-unstyled mr-l-5 pr-l-3 mr-4">
+                <li><a href="#" class="py-2 d-block">Shipping Information</a></li>
+                <li><a href="#" class="py-2 d-block">Returns &amp; Exchange</a></li>
+                <li><a href="#" class="py-2 d-block">Privacy Policy</a></li>
+                <li><a href="#" class="py-2 d-block">Terms &amp; Conditions</a></li>
+                <li><a href="FAQ.html" class="py-2 d-block">Faq Page</a></li>
+                
+              </ul>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <!-- <button type="button" class="btn btn-default"> -->
+            
+            <h3><strong>Contact With Me</strong></h3>
+          </button>
+          <div class="ftco-footer-widget mb-4">
+            
+            <br>
+            <div class="block-23 mb-3">
+              <ul>
+                <li><span class="icon icon-map-marker"></span><span class="text">Gurugram,  Uttar
+                    Pradesh(India)</span></li>
+                    <br>
+                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+91 6390254497
+                      </span></a></li>
+                      <br>
+                <li><a href="#"><span class="icon icon-envelope"></span><span
+                      class="text">padoski@dukan.com</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <hr>
+
+          <p>
+
+            <b>Copyright</b> &copy;
+            <script>document.write(new Date().getFullYear());</script> <b>All rights reserved</b>
+            <i class="icon-heart color-danger" aria-hidden="true"></i> <a href="https://colorlib.com"
+              target="_blank"></a>
+
+              <p>
+                <h5>Created By: <b>Mr.Rahul Kumar Sharma</b></h5>
+              </p>
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+ 
+
+
+
+  
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+        stroke="#F96D00" />
+    </svg></div>
+
+  <script>
+    $(document).ready(function () {
+
+      $('#itemslider').carousel({ interval: 3000 });
+
+      $('.carousel-showmanymoveone .item').each(function () {
+        var itemToClone = $(this);
+
+        for (var i = 1; i < 6; i++) {
+          itemToClone = itemToClone.next();
+
+          if (!itemToClone.length) {
+            itemToClone = $(this).siblings(':first');
+          }
+
+          itemToClone.children(':first-child').clone()
+            .addClass("cloneditem-" + (i))
+            .appendTo($(this));
+        }
+      });
+    });
+
+  </script>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

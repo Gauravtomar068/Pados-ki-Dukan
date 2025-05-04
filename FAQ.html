@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>FAQ</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <style type="text/css">
+      
+      body{
+        background: #eee;
+        padding-top: 20px;
+        font-family: monospace;
+      }
+      .header{
+        border-radius: 20px 20px 0px 0px;
+        padding: 10px 0px;
+        background: hsl(128, 100%, 25%);
+        color: #fff;
+        width: 100%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+      }
+      .faq-item{
+        margin-bottom: 40px;
+        margin-top: 40px;
+      }
+      .faq-body{
+        display: none;
+        margin-top: 30px;
+      }
+      .faq-wrapper{
+        width: 75%;
+        margin: 0 auto;
+      }
+      .faq-inner{
+        padding: 30px;
+        background: aliceblue;
+      }
+      .faq-plus{
+        float: right;
+        font-size: 1.4em;
+        line-height: 1em;
+        cursor: pointer;
+      }
+      hr{
+        background-color: #9b9b9b;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="faq-wrapper">
+          <div class="header">
+            <h1>FAQs</h1>
+          </div>
+          <div class="faq-inner">
+            <div class="faq-item">
+              <h3>
+                What is an FAQ page ?
+                <span class="faq-plus">&plus;</span>
+              </h3>
+              <div class="faq-body">
+                FAQ is used especially on websites to refer to questions about computers and the internet. FAQ is an abbreviation for 'frequently asked question' or 'frequently asked questions'.
+              </div>
+            </div>
+            <hr>
+            <div class="faq-item">
+              <h3>
+                How long does shipping take?
+                When will i receive my order?
+                <span class="faq-plus">&plus;</span>
+              </h3>
+              <div class="faq-body">
+                Its all depends on where you are in the world!
+                Finf your region estimated delivery time in the table below.
+              </div>
+            </div>
+            <hr>
+            <div class="faq-item">
+              <h3>
+                My order has been dispatched,can I track is?
+                <span class="faq-plus">&plus;</span>
+              </h3>
+              <div class="faq-body">
+               Once your order has been shipped,you'll receive a tracking number via mail.Note,it can take up to 7 daysfor shipping activity to update.
+              </div>
+            </div>
+            <hr>
+            <div class="faq-item">
+              <h3>
+            Do you offer a guarantee? Can i return my item?
+                <span class="faq-plus">&plus;</span>
+              </h3>
+              <div class="faq-body">
+                Of course. We offer an extended 30 day guarantee! ☑️
+If you aren’t 100% satisfied with your items, or received faulty goods, simply email our customer support team at  padoski@dukan.com. Please include the email address associated with the order and describe the issue, include photos if possible. We always aim to respond in 3 days or less!
+              </div>
+            </div>
+            <hr>
+            <div class="faq-item">
+              <h3>
+               Can I change or cancle my order?
+                <span class="faq-plus">&plus;</span>
+              </h3>
+              <div class="faq-body">
+                Sure! You can cancel, or change your order within 12 hours of confirmation. Please contact us with your name and order number at: padoski@dukan.com.
+
+                After 12 hours, your order will have been processed and we won’t be able to make any changes or cancel it.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <script type="text/javascript">
+      $(".faq-plus").on('click',function(){
+        $(this).parent().parent().find('.faq-body').slideToggle();
+      });
+    </script>
+  </body>
+  
+
+</html>
